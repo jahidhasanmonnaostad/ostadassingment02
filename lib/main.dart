@@ -24,7 +24,7 @@ class HomeActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.redAccent,
         actions: [
           IconButton(
             onPressed: () {},
@@ -36,7 +36,7 @@ class HomeActivity extends StatelessWidget {
             "Need Blood",
             style: TextStyle(
               fontSize: 20,
-              fontWeight: FontWeight.bold,
+              color:Colors.white,
             ),
           ),
         ),
@@ -46,12 +46,13 @@ class HomeActivity extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center, // Center vertically
           crossAxisAlignment: CrossAxisAlignment.center, // Center horizontally
           children: [
+
             CircleAvatar(
               radius: 60,
               backgroundColor: Colors.brown,//i am not guess colors name
               child: IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.bloodtype, color: Colors.red), // Corrected icon name
+                icon: Icon(Icons.bloodtype, color: Colors.red,size:40,), // Corrected icon name
               ),
             ),
             SizedBox(height: 20), // Add spacing between the CircleAvatar and Text
