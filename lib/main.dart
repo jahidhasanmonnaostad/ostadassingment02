@@ -28,7 +28,7 @@ class HomeActivity extends StatelessWidget {
         title: Text("My Profile"),
         backgroundColor: Colors.yellow,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.add)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.add),),
           IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
           IconButton(onPressed: () {}, icon: Icon(Icons.call)),
         ],
