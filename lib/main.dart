@@ -49,7 +49,7 @@ class HomeActivity extends StatelessWidget {
 
             CircleAvatar(
               radius: 60,
-              backgroundColor: Colors.brown,//i am not guess colors name
+              backgroundColor: Colors.black54,//i am not guess colors name
               child: IconButton(
                 onPressed: () {},
                 icon: Icon(Icons.bloodtype, color: Colors.red,size:40,), // Corrected icon name
