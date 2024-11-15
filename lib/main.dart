@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main (){
+void main() {
   runApp(MyApp());
 }
 
@@ -10,12 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title:"Ostad Flutter Project ",
+      title: "Ostad Flutter Project",
       debugShowCheckedModeBanner: false,
-      home:HomeActivity(),
+      home: HomeActivity(),
     );
   }
-
 }
 
 class HomeActivity extends StatelessWidget {
@@ -25,48 +24,44 @@ class HomeActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("My Profile"),
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.red,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.add),),
-          IconButton(onPressed: () {}, icon: Icon(Icons.settings)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.call)),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.add),
+          ),
         ],
+        title: Center( // Centering the Text widget
+          child: Text(
+            "Need Blood",
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
       ),
-      body:Center(
-        child:Column(
-          mainAxisAlignment:MainAxisAlignment.spaceEvenly,
+      body: Center(
+        child: Column( // Wrap the widgets inside a Column for proper alignment
+          mainAxisAlignment: MainAxisAlignment.center, // Center vertically
+          crossAxisAlignment: CrossAxisAlignment.center, // Center horizontally
           children: [
             CircleAvatar(
-              radius:60,
-              backgroundColor:Colors.grey,
-              child:IconButton(onPressed: (){}, icon:Icon(Icons.icecream_outlined)),
+              radius: 60,
+              backgroundColor: Colors.brown,//i am not guess colors name
+              child: IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.bloodtype, color: Colors.red), // Corrected icon name
+              ),
             ),
-            Text("Ice cream is very delicious right?",style:TextStyle(fontWeight:FontWeight.bold),),
-
-            CircleAvatar(
-              radius:60,
-              backgroundColor:Colors.grey,
-              child:IconButton(onPressed: (){}, icon:Icon(Icons.code_outlined)),
+            SizedBox(height: 20), // Add spacing between the CircleAvatar and Text
+            Text(
+              "Donate Blood", // Corrected string
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            Text("Programing is not boring if you love",style:TextStyle(fontWeight:FontWeight.bold),),
-
-            CircleAvatar(
-              radius:60,
-              backgroundColor:Colors.grey,
-              child:IconButton(onPressed: (){}, icon:Icon(Icons.water_drop_outlined)),
-            ),
-
-            Text("Sir i  am not use chatgpt ",style:TextStyle(fontWeight: FontWeight.bold),),
-
-
-
-
           ],
-
         ),
       ),
     );
   }
-
 }
