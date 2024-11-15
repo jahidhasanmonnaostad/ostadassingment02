@@ -31,33 +31,32 @@ class HomeActivity extends StatelessWidget {
             icon: Icon(Icons.add),
           ),
         ],
-        title: Center( // Centering the Text widget
+        title: Center(
           child: Text(
             "Need Blood",
             style: TextStyle(
               fontSize: 20,
-              color:Colors.white,
+              color: Colors.white,
             ),
           ),
         ),
       ),
       body: Center(
-        child: Column( // Wrap the widgets inside a Column for proper alignment
-          mainAxisAlignment: MainAxisAlignment.center, // Center vertically
-          crossAxisAlignment: CrossAxisAlignment.center, // Center horizontally
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-
             CircleAvatar(
               radius: 60,
-              backgroundColor: Colors.black54,//i am not guess colors name
+              backgroundColor: Colors.black54,
               child: IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.bloodtype, color: Colors.red,size:40,), // Corrected icon name
+                icon: Icon(Icons.bloodtype, color: Colors.red, size: 40),
               ),
             ),
-            SizedBox(height: 20), // Add spacing between the CircleAvatar and Text
+            SizedBox(height: 20),
             Text(
-              "Donate Blood", // Corrected string
+              "Donate Blood",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
           ],
