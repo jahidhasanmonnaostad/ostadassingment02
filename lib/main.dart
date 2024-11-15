@@ -56,6 +56,7 @@ class HomeActivity extends StatelessWidget {
               backgroundColor:Colors.grey,
               child:IconButton(onPressed: (){}, icon:Icon(Icons.water_drop)),
             ),
+
             Text("Sir i  am not use chatgpt ",style:TextStyle(fontWeight: FontWeight.bold),),
 
 
