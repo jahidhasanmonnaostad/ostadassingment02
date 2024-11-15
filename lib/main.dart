@@ -40,21 +40,21 @@ class HomeActivity extends StatelessWidget {
             CircleAvatar(
               radius:60,
               backgroundColor:Colors.grey,
-              child:IconButton(onPressed: (){}, icon:Icon(Icons.icecream)),
+              child:IconButton(onPressed: (){}, icon:Icon(Icons.icecream_outlined)),
             ),
             Text("Ice cream is very delicious right?",style:TextStyle(fontWeight:FontWeight.bold),),
 
             CircleAvatar(
               radius:60,
               backgroundColor:Colors.grey,
-              child:IconButton(onPressed: (){}, icon:Icon(Icons.code)),
+              child:IconButton(onPressed: (){}, icon:Icon(Icons.code_outlined)),
             ),
             Text("Programing is not boring if you love",style:TextStyle(fontWeight:FontWeight.bold),),
 
             CircleAvatar(
               radius:60,
               backgroundColor:Colors.grey,
-              child:IconButton(onPressed: (){}, icon:Icon(Icons.water_drop)),
+              child:IconButton(onPressed: (){}, icon:Icon(Icons.water_drop_outlined)),
             ),
 
             Text("Sir i  am not use chatgpt ",style:TextStyle(fontWeight: FontWeight.bold),),
